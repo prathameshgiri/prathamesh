@@ -1,0 +1,131 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+/*=============== VARIABLES CSS ===============*/
+
+
+
+
+footer {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+}
+
+.footer {
+  width: 100%;
+  background: #10182F;
+}
+
+.footer .footer_row {
+  max-width: var(--main-navbar-width);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 3.7rem 3rem;
+}
+
+.footer_row .footer_col .footer_col_heading {
+  color: #fff;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.footer_col .footer_col_list_parent {
+  margin-top: 20px;
+}
+
+.footer_col .footer_col_list_parent .footer_col_lists {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer_col .footer_col_list_parent .footer_col_lists .footer_col_links {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  color: #bfbfbf;
+}
+
+.footer_col .footer_col_list_parent .footer_col_lists .footer_col_links:hover {
+  color: #fff;
+}
+
+.footer_col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer_col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer_col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer_col input::placeholder {
+  color: #ccc;
+}
+
+ .footer_col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer_col form button:hover {
+  background: #cecccc;
+}
+
+.footer_col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer_col .icons i {
+  color: #afb6c7;
+}
+
+.footer_col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+ 
+  .footer .footer_row {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer_col form {
+    display: block;
+  }
+
+  .footer_col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer_col form button {
+    margin: 10px 0 0 0;
+  }
+}
